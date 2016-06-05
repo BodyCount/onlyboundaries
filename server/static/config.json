@@ -1,0 +1,11 @@
+{
+	"game":{
+		"prepTime": 2,
+		"roundTime": 59,
+		"tilesAmount": 5
+	},
+	"grid":{
+		"width": 7,
+		"height": 7
+	}
+}

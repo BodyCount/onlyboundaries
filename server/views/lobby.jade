@@ -1,0 +1,15 @@
+html(lang="en")
+	head
+	body
+	.container
+		.row
+			.six.colums
+				#aligner
+					h4 OnlyBoundaries
+					.content
+						p= "Players: "+room.players.length+"/"+room.playersLimit
+						each player in room.players
+							p= "Player: "+player.name
+						button(onclick="socketHandlers.startGame();") Start
+						button(onclick="socketHandlers.leave();") Leave
+include footer.jade

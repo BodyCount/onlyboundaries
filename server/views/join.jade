@@ -1,0 +1,29 @@
+html(lang="en")
+	head
+	body
+	.container
+		.row
+			.six.colums
+				#aligner
+					h4 OnlyBoundaries
+					.room-table
+						input(type="text" placeholder="Host nickname" id="room_name")
+						button(onclick="socketHandlers.joinRoom();") Connect
+						br
+						if hide
+							table.u-full-width
+								thead
+									tr
+										th Host
+										th Players
+										th
+								tbody
+									each value, key in rooms
+										tr
+											td= value.players[0].name
+											td= value.players.length+"/"+value.playersLimit
+											td
+												button(onclick="socketHandlers.joinRoom('"+value.players[0].name+"');") Join
+
+						button(style="text-align:center;" onclick="socketHandlers.leave();") Back
+include footer.jade

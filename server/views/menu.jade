@@ -1,0 +1,13 @@
+html(lang="en")
+	head
+	body
+		.container
+			.row
+				.six.colums
+					#aligner
+						h4 OnlyBoundaries
+						.content
+							button(id="host_button" onclick="socketHandlers.createGame();") Create game
+							button(id="join_button" onclick="socketHandlers.connectToGame();") Join game
+		
+include footer.jade

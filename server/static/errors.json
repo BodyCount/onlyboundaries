@@ -1,0 +1,4 @@
+{
+	"errors": [
+		"Nickname already used", "Room is full", "Cant find player with this nickname", "Player didn't host any game"]
+}

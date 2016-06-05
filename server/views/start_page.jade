@@ -1,0 +1,13 @@
+html(lang="en")
+	head
+	body
+	.container
+		.row
+			.six.colums
+				#aligner
+					h4 OnlyBoundaries
+					.content
+						input(type="text" placeholder="Nickname" id="player_name") 
+						button(onclick="socketHandlers.sendName();") Enter
+
+include footer.jade

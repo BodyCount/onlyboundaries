@@ -1,0 +1,54 @@
+p{
+	margin-bottom:0;  }
+
+#aligner{
+	position: relative;
+	width:100%;
+	text-align:center;
+	padding-top: 30%;
+	color: #222;  }
+
+#aligner .content {
+	margin:auto;
+	border: 1px solid #eee;
+	max-width: 20%;
+	padding-top: 24px;
+	padding-bottom: 12px;
+	padding-left: 14px;  }
+
+#aligner .room-table{
+	margin:auto;
+	border: 1px solid #eee;
+	max-width: 60%;
+	padding: 5px 5px;  }
+
+@media (min-width: 400px) {
+	#aligner{
+		width:100px;  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#aligner{
+		width: 100%;
+	}
+	#aligner .content{
+		max-width: 45%;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	#aligner{
+		width: 100%;
+	}
+	#aligner .content{
+		max-width: 40%;
+	}
+}
+
+
+
